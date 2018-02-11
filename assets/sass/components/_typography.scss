@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.1s;
+}
+
+body {
+  font-family: 'Roboto Condensed', Helvetica, sans-serif;
+  text-align: left;
+  font-size: 18px;
+  color: #303030;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #C3FF00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.disabled h3 {
+  color: #535353;
+  cursor: not-allowed;
+}
+
+.button-active {
+  color: #C3FF00;
+  background-color: #535353;
+}
+.hide {
+  display: none;
+}

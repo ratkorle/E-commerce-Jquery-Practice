@@ -1,0 +1,85 @@
+.product-card {
+  margin: 1em 0; }
+.product-card .tshirt1,
+.product-card .tshirt2,
+.product-card .tshirt3 {
+  background-size: 28em 15em;
+  background-position: center;
+  height: 14em;
+  transition: 0.2s; }
+.product-card .tshirt1 {
+  background-image: url("/assets/img/tshirt1.png"); }
+.product-card .tshirt2 {
+  background-image: url("/assets/img/tshirt2.png"); }
+.product-card .tshirt3 {
+  background-image: url("/assets/img/tshirt3.png"); }
+.product-card .photo-active {
+  background-size: 30.8em 16.5em;
+  transition: 0.2s; }
+.product-card .product-details {
+  margin-top: -5px;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between; }
+.product-card .product-details h4,
+.product-card .product-details p {
+  padding: 0.7em 1.25em; }
+.product-card .product-details div {
+  display: flex; }
+.product-card .product-details .more-details-button {
+  background-color: #535353;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  width: 1em;
+  transition: 0.1s; }
+.product-card .product-details .more-details-button img {
+  position: relative;
+  left: 0.1em; }
+.product-card .product-details .more-details-button .rotate {
+  transition: 0.1s;
+  transform: rotate(90deg); }
+.product-card .shoe-details {
+  display: none;
+  background-color: #535353;
+  color: #EFEFEF; }
+.product-card .shoe-details .active {
+  background-color: #C3FF00;
+  color: #303030; }
+.product-card .size-chart,
+.product-card p {
+  padding: 1em 1.25em; }
+.product-card .size-chart ul,
+.product-card p ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em; }
+.product-card .size-chart ul li,
+.product-card p ul li {
+  padding: 0.5em;
+  background-color: #303030;
+  width: 100%;
+  text-align: center;
+  margin-right: 2px; }
+.product-card .buy-now-button {
+  background-color: #303030;
+  text-align: center;
+  padding: 0.75em;
+  cursor: pointer; }
+.shopping-cart {
+  background-color: #171717;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 3.5em; }
+.shopping-cart .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em; }
+.shopping-cart .container .cart {
+  display: flex; }
+.shopping-cart .container .cart object {
+  margin-right: 0.75em; }
