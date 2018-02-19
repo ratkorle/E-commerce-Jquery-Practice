@@ -59,17 +59,17 @@ category: Basics
 nav {
   overflow: hidden; }
 
-nav .container {
+nav .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-nav .container object {
+nav .wrapper object {
   width: 4.5em;
   padding: 1.2em 0.5em; }
 
-nav .container .login-button,
-nav .container .menu-button {
+nav .wrapper .login-button,
+nav .wrapper .menu-button {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 1em 1.25em;
@@ -77,7 +77,8 @@ nav .container .menu-button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 500; }
 
 .nav-menu {
   background-color: #535353;
@@ -85,17 +86,17 @@ nav .container .menu-button {
   display: flex;
   justify-content: center; }
 
-.nav-menu .container {
+.nav-menu .wrapper {
   padding: 1.5em;
   display: flex; }
 
-.nav-menu .container ul {
+.nav-menu .wrapper ul {
   list-style: none; }
 
-.nav-menu .container ul li {
+.nav-menu .wrapper ul li {
   padding: 0.25em 2em; }
 
-.nav-menu .container ul li:first-child {
+.nav-menu .wrapper ul li:first-child {
   text-transform: uppercase;
   color: #C3FF00;
   letter-spacing: 0.05em; }
@@ -135,6 +136,9 @@ nav .container .menu-button {
   user-select: none;
   cursor: pointer; }
 
+html {
+  height: 100%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -144,9 +148,10 @@ body {
   font-family: 'Roboto Condensed', Helvetica, sans-serif;
   text-align: left;
   font-size: 18px;
+  height: 100%;
   color: #303030; }
 
-.container {
+.wrapper {
   max-width: 450px;
   margin: 0 auto; }
 
@@ -170,6 +175,9 @@ h4 {
 .hide {
   display: none; }
 
+.rotate {
+  transform: rotate(-180deg); }
+
 .product-card {
   margin: 1em 0; }
 
@@ -179,16 +187,17 @@ h4 {
   background-size: 28em 15em;
   background-position: center;
   height: 14em;
+  background-repeat: no-repeat;
   transition: 0.2s; }
 
 .product-card .tshirt1 {
-  background-image: url("/assets/img/tshirt1.png"); }
+  background-image: url("../img/t1.png"); }
 
 .product-card .tshirt2 {
-  background-image: url("/assets/img/tshirt2.png"); }
+  background-image: url("../img/t2.png"); }
 
 .product-card .tshirt3 {
-  background-image: url("/assets/img/tshirt3.png"); }
+  background-image: url("../img/t3.png"); }
 
 .product-card .photo-active {
   background-size: 30.8em 16.5em;
@@ -216,7 +225,7 @@ h4 {
 
 .product-card .product-details .more-details-button img {
   position: relative;
-  left: 0.1em; }
+  right: 0.3em; }
 
 .product-card .product-details .more-details-button .rotate {
   transition: 0.1s;
@@ -263,32 +272,42 @@ h4 {
   z-index: 99;
   width: 100%;
   box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.5);
-  display: none;
   height: 3.5em; }
 
-.shopping-cart .container {
+.shopping-cart .wrapper {
   display: flex;
   justify-content: space-between;
   padding: 1em; }
 
-.shopping-cart .container .cart {
+.shopping-cart .wrapper .cart {
   display: flex; }
 
-.shopping-cart .container .cart object {
+.shopping-cart .wrapper .cart object {
   margin-right: 0.75em; }
 
 footer {
-  color: #EFEFEF;
-  background-color: #303030;
+  color: #303030;
+  background-color: #EFEFEF;
   margin-top: 2em;
   padding: 2em 0.5em; }
 
-footer .container {
+footer .wrapper {
   display: flex;
   justify-content: space-between; }
 
-footer .container object {
+footer .wrapper object {
   width: 4.5em; }
+
+.contact {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1em 1.25em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 500; }
 
 /**
  * For modern browsers

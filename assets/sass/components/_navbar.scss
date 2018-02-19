@@ -1,17 +1,17 @@
 nav {
   overflow: hidden;
 }
-nav .container {
+nav .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .container object {
+nav .wrapper object {
   width: 4.5em;
   padding: 1.2em 0.5em;
 }
-nav .container .login-button,
-nav .container .menu-button {
+nav .wrapper .login-button,
+nav .wrapper .menu-button {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 1em 1.25em;
@@ -20,6 +20,7 @@ nav .container .menu-button {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .nav-menu {
@@ -28,17 +29,17 @@ nav .container .menu-button {
   display: flex;
   justify-content: center;
 }
-.nav-menu .container {
+.nav-menu .wrapper {
   padding: 1.5em;
   display: flex;
 }
-.nav-menu .container ul {
+.nav-menu .wrapper ul {
   list-style: none;
 }
-.nav-menu .container ul li {
+.nav-menu .wrapper ul li {
   padding: 0.25em 2em;
 }
-.nav-menu .container ul li:first-child {
+.nav-menu .wrapper ul li:first-child {
   text-transform: uppercase;
   color: #C3FF00;
   letter-spacing: 0.05em;

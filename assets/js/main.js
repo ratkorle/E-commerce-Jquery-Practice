@@ -1,22 +1,24 @@
-$(document).ready(() => {
-    $('.login-button').on('click', () => {
-    $('.login-form').toggle();
-});
+$( document ).ready(function() {
+    $( ".login-button" ).on( "click", function() {
+        $('.login-form').slideToggle(500);
+    });
+    $( ".menu-button" ).on( "click", function() {
+        $('.nav-menu').slideToggle(500);
+    });
+        $('.more-details-button').on('click', function () {
+        $(event.currentTarget).closest('.product-details').next().slideToggle(500);
+    $(event.currentTarget).find('img').toggleClass('rotate');
+    });
 
-$('.menu-button').on('mouseenter', () => {
-    $('.nav-menu').show();
-$('.menu-button').addClass('button-active');
-$('.nav-menu').removeClass('hide');
+    $('.shoe-details li').on('click', function () {
+        $(event.currentTarget).addClass('active');
+        $(event.currentTarget).siblings().removeClass('active');
+        $(event.currentTarget).closest('.shoe-details').children().removeClass('disabled');
+    });
+    $('.product-photo').on('mouseenter', function () {
+        $(this).addClass('photo-active');
+}).on('mouseleave', function() {
+        $(this).removeClass('photo-active');
+    });
 
-$('.menu-button').animate({
-    fontSize: '24px'
-}, 200)
-})
-
-$('.nav-menu').on('mouseleave', () => {
-    $('.nav-menu').hide();
-$('.menu-button').css({
-    color: '#EFEFEF',
-    backgroundColor: '#303030'
-})
 });

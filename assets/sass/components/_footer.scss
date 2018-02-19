@@ -1,10 +1,21 @@
 footer {
-  color: #EFEFEF;
-  background-color: #303030;
+  color: #303030;
+  background-color: #EFEFEF;
   margin-top: 2em;
   padding: 2em 0.5em; }
-footer .container {
+footer .wrapper {
   display: flex;
   justify-content: space-between; }
-footer .container object {
+footer .wrapper object {
   width: 4.5em; }
+.contact {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1em 1.25em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 500;
+}
